@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
 import scapy.all as scapy
-import optparse
+import argparse
 import subprocess
 import re
 
 def get_arguments():
-    parser = argparse.OptionParser()
-    parser.add_option("-t", "--targer", dest="target", help="Here is the address of the subnet that you're gonna scan")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-t", "--target", dest="target", help="Here is the address of the subnet that you're gonna scan")
 
 
     options = parser.parse_args()
